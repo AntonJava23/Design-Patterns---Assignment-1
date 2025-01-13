@@ -13,8 +13,7 @@ public class Employee {
     }
 
     public Employee(String name, String department, Role initialRole) {
-        this.name = name;
-        this.department = department;
+        this(name, department);
         if (initialRole == null) {
             throw new NullPointerException("Initial role is null");
         }
